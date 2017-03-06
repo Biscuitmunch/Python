@@ -1,0 +1,34 @@
+#Jason Wells
+#6 March 2017
+#Biscuitmunch
+import random
+numb = random.randint(1, 3)
+if numb == 1:
+  choice = "scissors"
+elif numb == 2:
+  choice = "rock"
+elif numb == 3:
+  choice = "paper"
+user = str(input("Rock, Paper or Scissors? (Spelling is important)"))
+print("Opponent chose ", choice)
+#user rocks
+if user == "rock" and choice == "scissors":
+  print("You Win!")
+if user == "rock" and choice == "rock":
+  print("Its a Draw!")
+if user == "rock" and choice == "paper":
+  print("You Lose!")
+#user papers
+if user == "paper" and choice == "rock":
+  print("You Win!")
+if user == "paper" and choice == "paper":
+  print("Its a Draw!")
+if user == "paper" and choice == "scissors":
+  print("You Lose!")
+#user scissors
+if user == "scissors" and choice == "paper":
+  print("You Win!")
+if user == "scissors" and choice == "scissors":
+  print("Its a Draw!")
+if user == "scissors" and choice == "rock":
+  print("You Lose!")
